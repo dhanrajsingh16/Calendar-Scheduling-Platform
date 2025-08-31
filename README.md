@@ -1,73 +1,57 @@
-# 🌟 Fullstack Scheduling Calendar SaaS Platform - _Meetly_
+A Calendar Scheduling Platform Saas
 
-## 🎥 Watch the Full Video on YouTube
+A fullstack calendar scheduling SaaS application that enables users to book, manage, and track meetings with ease. It is built with Node.js, PostgreSQL, TypeORM, and React.js, featuring a custom-built calendar and Google Calendar integration.
 
-**[Subscribe to the Channel](https://tinyurl.com/subcribe-to-techwithEmma)** to stay updated with more exciting projects and tutorials!
+-> Features
 
----
+User authentication with JWT
 
-## ❤️ Support the Channel
+Create public or private events
 
-If you love this project and want to see more, consider supporting the channel:
+Share unique booking links
 
-- Give this repository a ⭐️ on GitHub.
-- **[Buy Me a Coffee](https://www.buymeacoffee.com/techwithemmaofficial)** to help fund more educational content.
-- Like, share, and subscribe to the channel for more tutorials and updates!
+Define availability and prevent double-booking
 
----
+Time zone auto-detection
 
-## 📌 Project Overview
+Custom calendar (built from scratch, no plugins)
 
-🌟 Introducing Meetly — The Smartest Way to Book & Manage Meetings 🗓️ (A Calendly Clone!)
-A Fullstack Application Built with: Node.js, TypeORM, PostgreSQL, and React.js (Beginner to Pro)
+Google Calendar and Google Meet integration
 
----
+Track upcoming, past, and canceled meetings
 
-## 🌟 Key Features
+Switch between 12h and 24h formats
 
-- 🔑 Easy Sign-Up & Login (Using JWT Authentication)
-- 📅 Create Events (Public or Private)
-- 🔗 Share Your Unique Booking Link (Clients Book Instantly!)
-- ⏳ Set Your Availability & Time Slots (No Double-Booking!)
-- 🌍 Auto-Detect Time Zones
-- 📆 Custom-Built Calendar – No Plugins!
-- 🔄 Integration & Apps (Sync Your Google Meet & Calendar Scratch)
-- ✅ Track Upcoming, Past & Canceled Meetings
-- 🕰️ Switch Between 12h & 24h Formats
-- 💻 Built with: Node.js, TypeORM, PostgreSQL, React.js
-- 🎨 Tailwind CSS v4 & Shadcn-ui
+Built with Node.js, TypeORM, PostgreSQL, React.js, Tailwind CSS v4, and Shadcn UI
 
----
+-> Tech Stack
 
-## 🚀 Tools & Technologies
+Backend: Node.js, TypeORM, PostgreSQL
 
-This project leverages the latest tools and frameworks for modern development:
+Frontend: React.js, Vite.js, TailwindCSS, Shadcn UI
 
-- **Node.js**: Scalable backend architecture
-- **React.js**: Dynamic frontend framework
-- **TypeOrm & Superbase(PostgreSql)**: Flexible and scalable database solutions
-- **Google Calendar Api**: Seamless Google Calendar integration
-- **TypeScript**: For a type-safe codebase
-- **TailwindCSS & Shadcn UI**: Beautiful, responsive design
-- **Vite.js**: Lightning-fast frontend development
+Database: Supabase (PostgreSQL)
 
----
+Integration: Google Calendar API
 
-## 🔄 Getting Started
+Language: TypeScript
 
-### 1. Watch the Video
+-> Getting Started
 
-Follow along step-by-step by watching the full video on YouTube.
+1. Clone the repository
+git clone https://github.com/dhanrajsingh16/Calendar-Scheduling-Platform
 
-### 2. Set Up Environment Variables
+2. Install dependencies
+npm install
 
-Create a `.env` file in the root of your project and configure these variables:
+3. Configure environment variables
 
-```plaintext
+Create a .env file in the root directory and set the following:
+
 PORT=8000
 NODE_ENV=development
 
-DATABASE_URL="postgresql://postgres.<>:<>@aws-0-eu-central-1.pooler.supabase.com:6543/postgres"
+DATABASE_URL="postgresql://postgres:<>:<>@aws-0-eu-central-1.pooler.supabase.com:6543/postgres"
 
 JWT_SECRET="jwt_secret_key"
 JWT_EXPIRES_IN="1d"
@@ -78,31 +62,19 @@ GOOGLE_REDIRECT_URI="http://localhost:8000/api/integration/google/callback"
 
 FRONTEND_ORIGIN=http://localhost:5173
 FRONTEND_INTEGRATION_URL="http://localhost:5173/app/integrations"
-```
 
-### 3. Run the Application
-
-Install dependencies and start the development server:
-
-```bash
-npm install
+4. Run the application
 npm run dev
-```
 
-Access the backend at `http://localhost:8000`.
 
----
+Backend: http://localhost:8000
 
-## 🌐 Deploying Meetly
+Frontend: http://localhost:5173
 
-### 1. Add Environment Variables
+Deploy backend and frontend separately.
 
-Add the `.env` variables to your hosting platform (e.g., Render).
+Ensure Google API credentials are correctly configured for production.
 
-### 2. Deploy
+Author
 
-Deploy your app using your preferred method to make it live.
-
-### 📺 Like, Share & Subscribe
-
-Don’t miss out! **[Subscribe to the Channel](https://tinyurl.com/subcribe-to-techwithEmma)** for more amazing content and exciting projects.
+Dhanraj Singh
