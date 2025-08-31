@@ -38,14 +38,13 @@ Language: TypeScript
 
 -> Getting Started
 
-1. Clone the repository
+Clone the repository
 git clone https://github.com/dhanrajsingh16/Calendar-Scheduling-Platform
 
-2. Install dependencies
+Install dependencies
 npm install
 
-3. Configure environment variables
-
+Configure environment variables
 Create a .env file in the root directory and set the following:
 
 PORT=8000
@@ -63,7 +62,7 @@ GOOGLE_REDIRECT_URI="http://localhost:8000/api/integration/google/callback"
 FRONTEND_ORIGIN=http://localhost:5173
 FRONTEND_INTEGRATION_URL="http://localhost:5173/app/integrations"
 
-4. Run the application
+Run the application
 npm run dev
 
 
